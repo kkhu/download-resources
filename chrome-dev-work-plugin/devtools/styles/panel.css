@@ -1,0 +1,24 @@
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.panel {
+  
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.control-bar button {
+  margin: 0 10px;
+}
+.statistic {
+  margin: 10px 0;
+  border: solid 1px #ccc;
+  min-height: 160px;
+}
+.resources-wp {
+  margin: 10px 0;
+  border: solid 1px #ccc;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "MyWorkPlugin",
+  "description" : "work tool plugin",
+  "version": "1.0",
+  "version_name": "1.01",  
+  "manifest_version": 3,
+  "permissions": ["storage", "declarativeContent", "tabs", "activeTab", "scripting", "webNavigation",  "sidePanel", "webRequest", "webRequestAuthProvider"],
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/16.png",
+    "48": "icons/48.png",
+    "72": "icons/48.png",
+    "128": "icons/128.png",
+    "512": "icons/128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "devtools_page": "devtools/index.html"
+}

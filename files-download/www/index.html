@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale-1.0,max-scale-1.0,user-scalable=0"
+    />
+    <script src="./js/zepto-v1.1.6.js"></script>
+  </head>
+  <body>
+    The server is running
+
+    <script>
+      function testProxy() {
+        $.ajax({
+          url: "/download",
+          method: 'post',
+          body: {urls: ['https://abc.com']},
+          success: function (res) {
+            console.log("res=", res);
+          },
+        });
+      }
+      testProxy();
+
+      function requestUrl() {
+        $.ajax({
+          url: "",
+          success: function (res) {
+            console.log("res=", res);
+          },
+        });
+      }
+
+      // requestUrl();
+    </script>
+  </body>
+</html>
